@@ -4,6 +4,7 @@ import netlify from "@astrojs/netlify";
 import robotsTxt from "astro-robots-txt";
 import UnoCSS from "@unocss/astro";
 import icon from "astro-icon";
+import vercel from "@astrojs/vercel/edge";
 
 import solidJs from "@astrojs/solid-js";
 import { remarkReadingTime } from "./src/lib/ remark-reading-time.mjs";
@@ -24,13 +25,13 @@ export default defineConfig({
     solidJs(),
     UnoCSS({ injectReset: true }),
     icon(),
-    svelte(),
+    svelte(),  
   ],
   markdown: {
     remarkPlugins: [remarkReadingTime],
   },
   output: "server",
-  adapter: netlify({ edgeMiddleware: true }),
+  adapter: vercel(),
   vite: {
     assetsInclude: "**/*.riv",
   },
