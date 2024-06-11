@@ -1,0 +1,38 @@
+---
+import Card from "../components/Card/index.astro";
+import { LINKS } from "../lib/constants";
+---
+
+<Card colSpan="lg:col-span-04 md:col-span-01" rowSpan="md:row-span-4">
+  <div class="h-full">
+    <header class="flex items-center pl-[50px]">
+      <h1 class="text-white text-xl font-bold">
+        Portfolio
+      </h1>
+    </header>
+    <div class="flex flex-col mt-4 w-full">
+      <ul class="flex lg:justify-evenly w-full">
+        <li>
+            <a href={LINKS.linkedin} target="_blank"> 
+                <img width="200px" class="rounded-md" src="articles-quasar.png" alt="articles-quasar">
+            </a>
+        </li>
+        <li>
+            <a href={LINKS.linkedin} target="_blank"> 
+                <img width="200px" class="rounded-md" src="articles-quasar.png" alt="articles-quasar">
+            </a>
+        </li>
+        <li>
+            <a href={LINKS.linkedin} target="_blank"> 
+                <img width="200px" class="rounded-md" src="articles-quasar.png" alt="articles-quasar">
+            </a>
+        </li>
+        <li>
+            <a href={LINKS.linkedin} target="_blank"> 
+                <img width="200px" class="rounded-md" src="articles-quasar.png" alt="articles-quasar">
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</Card>

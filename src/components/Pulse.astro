@@ -1,6 +1,18 @@
+---
+const { status } = Astro.props
+const color = {
+  initial: 'bg-green-400 opacity-75', 
+  finally: 'bg-green-500'
+}
+if(status === "warning"){
+  color.initial = 'bg-amber-300 opacity-80'
+  color.finally = 'bg-amber-400'
+}else{
+}
+---
+
 <span class="relative flex h-3 w-3">
-  <span
-    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
+  <span class:list={["animate-ping absolute inline-flex h-full w-full rounded-full", color.initial]}
   ></span>
-  <span class="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
+  <span class:list={["relative inline-flex rounded-full h-3 w-3", color.finally]}></span>
 </span>
