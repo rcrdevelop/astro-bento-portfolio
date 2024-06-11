@@ -4,10 +4,12 @@ const color = {
   initial: 'bg-green-400 opacity-75', 
   finally: 'bg-green-500'
 }
-if(status === "warning"){
+if(status === "working-slow"){
   color.initial = 'bg-amber-300 opacity-80'
   color.finally = 'bg-amber-400'
-}else{
+}else if(status === "paused"){
+  color.initial = 'bg-red-400 opacity-80'
+  color.finally = 'bg-red-500'
 }
 ---
 
