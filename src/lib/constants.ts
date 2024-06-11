@@ -7,7 +7,8 @@ export const LINKS = {
   mail: "mailto:contreras06rj@gmail.com",
   articlesProject: "",
   ShopifyStore: "",
-  BotTelegram: ""
+  BotTelegram: "",
+  IQJOBS: ""
 };
 
 export const loaderAnimation = [
