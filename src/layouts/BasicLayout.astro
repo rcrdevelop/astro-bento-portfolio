@@ -27,25 +27,25 @@ const schema =
         "@context": "http://schema.org",
         "@type": "Person",
         name: "Ricardo",
-        url: "https://gianmarco.xyz",
+        url: "https://portfolio-rcr.vercel.app/",
         sameAs: [
           "https://www.linkedin.com/in/ricardo-contreras-rivero-5b807b17a/",
           "https://github.com/rcrdevelop",
         ],
-        image: "https://gianmarco.xyz/og-image.png",
+        image: "https://portfolio-rcr.vercel.app/og-image.png",
         jobTitle: "Software Engineer",
         worksFor: {
           "@type": "Organization",
           name: "Self-Employed",
           address: {
             "@type": "PostalAddress",
-            addressLocality: "Italy",
-            addressCountry: "IT",
+            addressLocality: "Venezuela",
+            addressCountry: "VE",
           },
         },
         nationality: {
           "@type": "Country",
-          name: "Italy",
+          name: "Venezuela",
         },
       }
     : {
@@ -53,15 +53,15 @@ const schema =
         "@type": "BlogPosting",
         mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": `https://gianmarco.xyz/blog/${slug}`,
+          "@id": `https://portfolio-rcr.vercel.app/blog/${slug}`,
         },
         headline: frontmatter?.title || title,
         description: frontmatter?.description || title,
-        image: "https://gianmarco.xyz/og-image.png", //TODO: dynamic
+        image: "https://portfolio-rcr.vercel.app/og-image.png", //TODO: dynamic
         author: {
           "@type": "Person",
           name: "Ricardo",
-          url: "https://gianmarco.xyz",
+          url: "https://portfolio-rcr.vercel.app/",
           sameAs: [
             "https://www.linkedin.com/in/ricardo-contreras-rivero-5b807b17a",
             "https://github.com/rcrdevelop",
@@ -72,7 +72,7 @@ const schema =
           name: "Ricardo",
           logo: {
             "@type": "ImageObject",
-            url: "https://gianmarco.xyz/og-image.png",
+            url: "https://portfolio-rcr.vercel.app/og-image.png",
           },
         },
         datePublished: frontmatter?.pubDate || new Date().toISOString(),
