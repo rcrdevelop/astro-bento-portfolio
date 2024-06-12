@@ -27,5 +27,7 @@ export default defineConfig({
   vite: {
     assetsInclude: "**/*.riv"
   },
-  adapter: vercel()
+  adapter: vercel({
+    webAnalytics: { enabled: true }
+  })
 });
