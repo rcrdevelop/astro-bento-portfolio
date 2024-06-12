@@ -11,7 +11,7 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://gianmarco.xyz/",
+  site: "https://rcrdevelop.com/",
   integrations: [sitemap(), robotsTxt({
     sitemap: [
       "https://rcrdevelop.com/sitemap-index.xml",
