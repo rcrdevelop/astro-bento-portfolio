@@ -14,8 +14,8 @@ export default defineConfig({
   site: "https://gianmarco.xyz/",
   integrations: [sitemap(), robotsTxt({
     sitemap: [
-      //"https://gianmarco.xyz/sitemap-index.xml",xzx
-      //"https://gianmarco.xyz/sitemap-0.xml",
+      "https://rcrdevelop.com/sitemap-index.xml",
+      "https://rcrdevelop.com/sitemap-0.xml",
     ]
   }), solidJs(), UnoCSS({
     injectReset: true
