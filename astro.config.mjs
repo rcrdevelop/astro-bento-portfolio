@@ -15,7 +15,7 @@ export default defineConfig({
   integrations: [sitemap(), robotsTxt({
     sitemap: [
       "https://rcrdevelop.com/sitemap-index.xml",
-      "https://rcrdevelop.com/sitemap-0.xml",
+      "https://rcrdevelop.com/sitemap-0.xml"
     ]
   }), solidJs(), UnoCSS({
     injectReset: true
